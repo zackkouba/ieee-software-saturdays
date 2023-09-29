@@ -85,6 +85,9 @@ strong { font-weight: var(--fw-bold); }
     transform: scale(1.1);
 }
 
+.btn + .btn {
+    margin-top: 1em;
+}
 /* Typography */
 h1,
 h2,
@@ -342,11 +345,24 @@ header {
     .skill__scale {
         display: flex;
         margin: 0 auto;
-        width: 100px;
+        width: 200px;
     }
 
     .skill__scale i {
         margin: 0 auto;
+    }
+
+    .skill__scale input {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .skills {
+        padding-left: 100px;
+    }
+
+    .btn + .btn {
+        margin-left: 3em;
     }
 }
 

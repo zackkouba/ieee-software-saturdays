@@ -26,7 +26,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">JavaScript</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                 </ul>
             </nav>
@@ -45,116 +45,32 @@
         <!-- WHAT I KNOW, LANGUAGES -->
         <section class="my-skills" id="skills">
             <!-- Title with underline; Body of many boxes referring to languages, with flipping characteristics -->
-            <h2 class="section__title section__title--skills">My Skills</h2>
+            <h2 class="section__title section__title--skills">JavaScript</h2>
             <div class="skills">
                 <div class="skill">
-                    <h3>Python</h3>
+                    <h3>Input Number</h3>
                     <p></p>
                     <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
+                        <input type="number" id="number1">
                     </div> <!-- /skill__scale -->
                 </div> <!-- /skill -->
                 <div class="skill">
-                    <h3>C</h3>
+                    <h3>Input Number</h3>
                     <p></p>
                     <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
+                        <input type="number" id="number2">
                     </div> <!-- /skill__scale -->
                 </div> <!-- /skill -->
                 <div class="skill">
-                    <h3>C++</h3>
+                    <h3>Result</h3>
                     <p></p>
                     <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
+                        <input type="number" id="numberresult" disabled="disabled">
                     </div> <!-- /skill__scale -->
                 </div> <!-- /skill -->
             </div> <!-- /skills -->
-
-            <div class="skills">
-                <div class="skill">
-                    <h3>HTML</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> <!-- /skill__scale -->
-                </div> <!-- /skill -->
-                <div class="skill">
-                    <h3>CSS</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> <!-- /skill__scale -->
-                </div> <!-- /skill -->
-                <div class="skill">
-                    <h3>JavaScript</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> <!-- /skill__scale -->
-                </div> <!-- /skill -->
-            </div> <!-- /skills -->
-
-            <div class="skills">
-                <div class="skill">
-                    <h3>SQL</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> <!-- /skill__scale -->
-                </div> <!-- /skill -->
-                <div class="skill">
-                    <h3>ReactJS</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> <!-- /skill__scale -->
-                </div> <!-- /skill -->
-                <div class="skill">
-                    <h3>Java</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> <!-- /skill__scale -->
-                </div> <!-- /skill -->
-            </div> <!-- /skills -->
-            
-            <a href="#skills" class="btn">My Skills</a>
+            <a onclick="changeOperator()" class="btn">Click To Toggle Operator</a>
+            <a onclick="operatorTwoNumbers()" class="btn" id="operatorbutton">Add Numbers</a>
         </section>
 
         <!-- ABOUT ME -->
@@ -229,7 +145,7 @@
             }
         </script>
 
-        <!-- JavaScript for Hamburger -->
+        <!-- JavaScript for Hamburger and Additions -->
         <script src="js/index.js"></script>
     </body>
 </html>
